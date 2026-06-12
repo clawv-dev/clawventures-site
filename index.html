@@ -3,65 +3,132 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Claw Ventures LLC</title>
-  <meta name="description" content="Claw Ventures LLC — a Maryland software company building consumer apps." />
-  <style>
-    :root {
-      color-scheme: light dark;
-    }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      background: #0f1117;
-      color: #e6e8ee;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
-      text-align: center;
-    }
-    main {
-      max-width: 36rem;
-    }
-    h1 {
-      font-size: 2.25rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.75rem;
-    }
-    p.tagline {
-      font-size: 1.125rem;
-      color: #9aa0ae;
-      margin-bottom: 2rem;
-    }
-    a.contact {
-      color: #8ab4ff;
-      text-decoration: none;
-      font-size: 1rem;
-    }
-    a.contact:hover {
-      text-decoration: underline;
-    }
-    footer {
-      position: fixed;
-      bottom: 1.5rem;
-      font-size: 0.8125rem;
-      color: #6b7180;
-    }
-  </style>
+  <title>Claw Ventures LLC — Independent Software Studio</title>
+  <meta name="description" content="Claw Ventures LLC is an independent software studio in Baltimore, Maryland, building practical AI-assisted consumer apps including Towardist, a unified job search, and an AI education assistant." />
+  <meta property="og:title" content="Claw Ventures LLC" />
+  <meta property="og:description" content="An independent Maryland software studio building practical, AI-assisted consumer apps." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://clawventures.llc" />
+  <link rel="canonical" href="https://clawventures.llc" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main>
-    <h1>Claw Ventures LLC</h1>
-    <p class="tagline">A Maryland software company building consumer apps.</p>
-    <a class="contact" href="mailto:hello@clawventures.llc">hello@clawventures.llc</a>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="index.html">
+          <svg class="mark" viewBox="0 0 24 24" aria-hidden="true">
+            <g fill="none" stroke="#b8431f" stroke-width="2.4" stroke-linecap="round">
+              <path d="M5 21 C7 15, 7.5 9, 6.5 4" />
+              <path d="M12 21 C13.5 15, 13.5 8, 12 3" />
+              <path d="M19 21 C17.5 15, 17 9, 18 4" />
+            </g>
+          </svg>
+          Claw Ventures
+        </a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="wrap">
+      <section class="hero">
+        <span class="kicker">Independent software studio &middot; Baltimore, MD</span>
+        <h1>Practical software, <em>thoughtfully<svg viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M2,7 Q30,1 55,5 T98,4" /></svg></em> built.</h1>
+        <p class="sub">We build AI-assisted consumer apps that help people make real progress &mdash; toward their goals, their next job, and their learning.</p>
+        <a class="btn" href="#products">See what we&rsquo;re building</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </section>
+    </div>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span><b>Towardist</b> &mdash; your AI goal partner</span><span>&#10022;</span>
+        <span><b>Job Search</b> &mdash; one search, every board</span><span>&#10022;</span>
+        <span><b>Education Assistant</b> &mdash; less busywork, more learning</span><span>&#10022;</span>
+        <span><b>Towardist</b> &mdash; your AI goal partner</span><span>&#10022;</span>
+        <span><b>Job Search</b> &mdash; one search, every board</span><span>&#10022;</span>
+        <span><b>Education Assistant</b> &mdash; less busywork, more learning</span><span>&#10022;</span>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="wrap">
+        <p class="eyebrow reveal"><span class="num">01</span> About</p>
+        <h2 class="reveal">An independent studio with a focused portfolio</h2>
+        <p class="lead reveal d1">Claw Ventures LLC is a Maryland limited liability company founded in 2023. We design, build, and operate a small portfolio of consumer applications, with a common thread: pairing dependable engineering with AI where it genuinely helps, and leaving it out where it doesn&rsquo;t.</p>
+        <p class="lead reveal d2">Rather than spreading thin, we build a handful of apps end to end &mdash; product, engineering, and support &mdash; and stand behind each one. The products below are in active development ahead of public release.</p>
+      </div>
+    </section>
+
+    <section id="products" class="band">
+      <div class="wrap">
+        <p class="eyebrow reveal"><span class="num">02</span> Products</p>
+        <h2 class="reveal">What we&rsquo;re building</h2>
+        <div class="cards">
+          <a class="card reveal d1" href="towardist.html">
+            <span class="index">No. 01</span>
+            <h3>Towardist</h3>
+            <p>An AI goal partner that helps people define meaningful goals and stay on track with personalized coaching that adapts to what they&rsquo;re working on.</p>
+            <span class="card-link">Learn more <span class="arrow">&rarr;</span></span>
+          </a>
+          <a class="card reveal d2" href="job-search.html">
+            <span class="index">No. 02</span>
+            <h3>Job Search</h3>
+            <p>One search across several major job boards &mdash; private sector, remote-first, and federal roles together in a single place.</p>
+            <span class="card-link">Learn more <span class="arrow">&rarr;</span></span>
+          </a>
+          <a class="card reveal d3" href="education-assistant.html">
+            <span class="index">No. 03</span>
+            <h3>Education Assistant</h3>
+            <p>An AI assistant for students and educators that streamlines everyday classroom and study tasks, so more time goes to learning.</p>
+            <span class="card-link">Learn more <span class="arrow">&rarr;</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <p class="eyebrow reveal"><span class="num">03</span> Contact</p>
+        <h2 class="reveal">Get in touch</h2>
+        <p class="lead reveal d1">For general, product, or business inquiries, reach us by email and we&rsquo;ll get back to you.</p>
+        <div class="contact-grid reveal d2">
+          <div>
+            <h3>Email</h3>
+            <p><a href="mailto:inquiries_relations@clawventures.llc">inquiries_relations@clawventures.llc</a></p>
+          </div>
+          <div>
+            <h3>Mailing address</h3>
+            <address>
+              Claw Ventures LLC<br />
+              306 W Redwood St, Ste 201<br />
+              Baltimore, MD 21201<br />
+              United States
+            </address>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer>&copy; 2026 Claw Ventures LLC. All rights reserved.</footer>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="wordmark">Claw <em>Ventures</em></div>
+        <p>&copy; 2026 Claw Ventures LLC &middot; Baltimore, Maryland, USA<br /><a href="mailto:inquiries_relations@clawventures.llc">inquiries_relations@clawventures.llc</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
