@@ -317,6 +317,10 @@ footer .wordmark em { font-style: italic; color: var(--gold); font-weight: 400; 
 footer p { font-size: 0.875rem; }
 footer a { color: var(--gold); }
 footer a:hover { color: var(--cream-on-dark); }
+footer .ver {
+  margin-top: 1.25rem; font-size: 0.75rem; color: var(--muted-on-dark);
+  opacity: 0.55; letter-spacing: 0.04em;
+}
 
 /* ---------- Reveal-on-scroll ---------- */
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.7s ease, transform 0.7s ease; }
