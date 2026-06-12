@@ -37,6 +37,8 @@ html {
      auto-inflating text, which overflowed the nav on Android. */
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  /* Belt-and-braces: never allow horizontal pan even if something overflows. */
+  overflow-x: clip;
 }
 
 body {
@@ -88,7 +90,7 @@ nav {
 }
 .brand:hover { text-decoration: none; color: var(--ink); }
 .brand .mark { width: 1.5rem; height: 1.5rem; flex: none; }
-.nav-links { display: flex; gap: 2rem; }
+.nav-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 2rem; }
 .nav-links a {
   position: relative; color: var(--muted); font-size: 0.9375rem; font-weight: 500;
   padding: 0.25rem 0;
